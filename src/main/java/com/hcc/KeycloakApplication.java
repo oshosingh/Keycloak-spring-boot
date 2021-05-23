@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+import com.hcc.service.AdminToken;
+
 @SpringBootApplication
 public class KeycloakApplication {
 
@@ -16,5 +18,4 @@ public class KeycloakApplication {
 	public RestTemplate getTemplate() {
 		return new RestTemplate();
 	}
-
 }
